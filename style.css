@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+/* DO NOT EDIT ABOVE THIS LINE */
+
+
+
+
+/* Style the body */
+body{
+  margin: 0px;
+}
+
+
+
+/* Header/logo Title */
+.header{
+  display: flex; 
+  flex-direction: column;
+  background-image: url('images/header_img.jpg');
+  background-position: center;
+  align-items: center;
+  padding-bottom: 120px;
+
+}
+
+h1{
+  position: relative;
+  text-align: center;
+  top: 81px;
+  background-color: white;
+  width: 90%;
+
+}
+
+p{
+position: relative;
+text-align: center;
+top: 43px;
+background-color: white;
+width: 90%;
+}
+
+
+
+
+
+/* Column container */
+.row{
+  display: flex;
+
+
+}
+
+
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side{
+display: inline-block; 
+flex-direction: column;
+align-items: flex-start; 
+background-color: rgb(238, 238, 238);
+padding-bottom: 315px;
+}
+input {
+  vertical-align: top;
+  width: 70%;
+  justify-content: center;
+  margin-left: 5%;
+  padding-bottom: 15px;
+  
+}
+
+h2{
+  margin-left: 5%;
+}
+
+button {
+  vertical-align: top;
+  width: 70%;
+  justify-content: center;
+  margin-left: 5%;
+  padding-bottom: 8px;
+}
+
+
+
+/* Main column */
+.row-main{
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+}
+
+
+/* Hero image, just for this example */
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  width: 300px;
+  margin-bottom: 30px;
+  margin-right: 15px;
+}
+
+.heroImg{
+display: flex;
+/* background-image: url('images/black-panther.jpg'),url('images/superman.jpg'), url('images/wonder-woman.jpg'), url('images/spider-man.jpg'), url('images/batman.jpg'), url('images/storm.jpg');  */
+}
+
+
+
+
+/* Footer */
+.footer{
+  background-color: rgb(55, 55, 55);
+  color: white;
+  padding-bottom: 45px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+#addHero{
+  color: white;
+  background-color: rgb(50, 87, 191);
+}
+
+ 
+
+
+/* DO NOT EDIT BELOW THIS LINE */
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+  .hero-card {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+}
